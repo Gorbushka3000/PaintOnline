@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="toolbar box size">
+            <!-- toolbar  -->       
+                <div>
+                <label class="bellota-text-bold ltool">Фигура</label>
+                    <ul class="tool">
+                        <li>
+                            <img src="../src/Square.png" class="imgSize el-margin">
+                            <span id="square"> Квадрат</span>
+                        </li>
+                        <li>
+                            <img src="../src/Triangle.png" class="imgSize el-margin">
+                            <span id="triangle"> Треугольник</span>
+                        </li>
+                        <li>                        
+                            <img src="../src/Circle.png" class="imgSize el-margin">
+                            <span id="circle"> Круг</span></li>
+                        <li><input type="checkbox" class="el-margin"><span> Заливка</span></li>
+                    </ul>
+                </div>
+                <div>
+                <label class="bellota-text-bold ltool">Инструмент</label>
+                    <ul class="tool">
+                        <li>                        
+                            <img src="../src/Brush.png" class="imgSize el-margin">
+                            <span> Кисточка</span></li>
+                        <li>
+                            <img src="../src/Eraser.png" class="imgSize el-margin">
+                            <span> Ластик</span>
+                        </li>
+                        <li><input type="range" class="el-margin"></li>
+                        <li style="justify-content: center ;"><input type="color"></li>
+                    </ul>
+                </div>
+                <button class="clean" id="clear">Очистить холст</button>
+            </div>
+        <div class="gamebar size">
+            <div class="infobox box">
+                <div>
+                    <ul class="gamers">
+                        <li> Игрок 1 </li>
+                        <li> Игрок 2 </li>
+                        <li> Игрок 3 </li>
+                        <li> Игрок 4 </li>
+                        <li> Игрок 5 </li>
+                        <li> Игрок 6 </li>
+                    </ul>
+                </div>
+                <span class="winword">Говно</span>
+                <div>
+                    <span class="timer"> 0 </span>
+                    <span class="timer"> 0 </span>
+                    <span> : </span>
+                    <span class="timer"> 0 </span>
+                    <span class="timer"> 0 </span>
+                </div>
+            </div>
+            <canvas  height = 500px width = 700px class="paint box" id="paint-canvas">
+                <!-- paint -->
+            </canvas>
+            <script src="../js/paint.js"></script>
+        </div>
+        <div class="chat box size">
+            <!-- chat -->
+            <div class="chat-out">
+                <span class="my-message">
+                    Привет
+                </span>
+                <span class="gamer-message">
+                    Привет
+                </span>
+                <span class="my-message">
+                    Как дела?
+                </span>
+                <span class="gamer-message">
+                    Хорошо! А у тебя?
+                </span>
+                
+            </div> 
+            
+            <div class="messagebutton">
+                <input class="message-input" type="text" name="message">
+                <input type="image" src="../src/sendmessage.png" class="button-input"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
